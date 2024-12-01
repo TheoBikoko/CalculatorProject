@@ -19,6 +19,11 @@ public class Calculator {
     public int modulus(int a, int b) {
         return a % b;
 }
+
+    public double sqrt(double a){
+        return Math.sqrt(a);
+    }
+
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
         System.out.println("Addition: " + calculator.add(10, 5));
@@ -26,5 +31,6 @@ public class Calculator {
         System.out.println("Multiplication: " + calculator.multiply(10, 5));
         System.out.println("Division: " + calculator.divide(10, 0));
         System.out.println("Modulus: " + calculator.modulus(10, 7));
+        System.out.println("Raiz: " + calculator.sqrt(10));
     }
 }
